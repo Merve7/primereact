@@ -218,12 +218,12 @@ class AppMenu extends Component {
                             <Link to="/fileupload">&#9679; Upload</Link>
                         </div>
 
-                        <a href="#" onClick={(event) => this.openMenu(event, 6)} className={classNames({ 'active-menuitem': this.state.activeMenu === 6 })} style={{ display: 'none' }}>
+                        <a href="#" onClick={(event) => this.openMenu(event, 6)} className={classNames({ 'active-menuitem': this.state.activeMenu === 6 })}>
                             <img alt="button" src="showcase/resources/images/mono/menu.svg"></img>
                             <span>Menu</span>
                         </a>
-                        <div className={classNames({ 'submenu-hidden': this.state.activeMenu !== 6, 'submenu-visible': this.state.activeMenu === 6 })} style={{ display: 'none' }}>
-
+                        <div className={classNames({ 'submenu-hidden': this.state.activeMenu !== 6, 'submenu-visible': this.state.activeMenu === 6 })}>
+                            <Link to="/menu">&#9679; Menu</Link>
                         </div>
 
                         <a href="#" onClick={(event) => this.openMenu(event, 7)} className={classNames({ 'active-menuitem': this.state.activeMenu === 7 })}>
